@@ -3,5 +3,6 @@
 
 ### demo  
 * [task_1_6](http://demo.bitibiti.com/ife_2016_spring/task_1_6/index.html)
+* [task_1_8](http://demo.bitibiti.com/ife_2016_spring/task_1_8/index.html)
 
 
