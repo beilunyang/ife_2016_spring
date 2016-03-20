@@ -1,0 +1,56 @@
+@mixin make-base-grid($i:1, $col:".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}"){
+	@for $i from 2 through $grid-col-num{
+		$col: "#{$col}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
+	}
+
+	#{$col}{
+		position: relative;
+		float: left;
+		padding-left: $grid-padding/2;
+		padding-right: $grid-padding/2;
+	}
+}
+
+@mixin make-differ-grid-width($i,$class,$type){
+	@if($type == offset && $i < 12 && $i > 0){
+		.col-#{$class}-offset-#{$i}{
+			margin-left: percentage($i/$grid-col-num);
+		}
+	}
+
+	@if($type == pull && $i < 12 && $i > 0){
+		.col-#{$class}-pull-#{$i}{
+			right: percentage($i/$grid-col-num);
+		}
+	}
+
+	@if($type == push && $i < 12 && $i > 0){
+		.col-#{$class}-push-#{$i}{
+			left: percentage($i/$grid-col-num);
+		}
+	}
+
+	@if($type == width && $i < 13 && $i > 0){
+		.col-#{$class}-#{$i}{
+			width: percentage($i/$grid-col-num); 
+		}
+	}
+}
+
+
+@mixin make-media($width,$i,$class,$type){
+	@media (min-width: $width){
+		@include make-differ-grid-width($i,$class,$type);
+	}
+}
+
+@mixin make-media-cols($divide,$type){
+	@each $class, $width in $divide{
+		@for $i from 1 through $grid-col-num{
+			@include make-media($width,$i,$class,$type);
+		}
+	}
+}
+
+
+
