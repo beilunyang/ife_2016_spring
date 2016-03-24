@@ -1,0 +1,47 @@
+body{
+	margin: 0;
+}
+
+.flexbox{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.flexbox > div{
+	border: 1px solid #F00;
+	width: 150px;
+	margin-bottom: 20px;
+    /* flex:0 1 auto; */
+}
+
+.flexbox > div:first-child{
+	height: 120px;
+
+}
+
+.flexbox > div:nth-child(2){
+	height: 100px;
+}
+
+.flexbox > div:nth-child(3){
+	height: 40px;
+}
+
+.flexbox > div:last-child{
+	height: 200px;
+	border-color: #0F0;
+}
+
+@media (max-width: 640px) {
+	.flexbox{
+		/* justify-content: space-around; */
+		align-items: flex-start;
+	}
+
+	.flexbox > div:last-child{
+		order: -1;
+	}
+}
