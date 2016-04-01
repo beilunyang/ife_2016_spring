@@ -1,0 +1,47 @@
+body{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.t,
+.t-1,
+.t-2,
+.t-3{
+	border: 1px solid #000;
+	background-color: #FFF;
+}
+
+.t{
+	width: 800px;
+	height: 400px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.t-1{
+	width: 350px;
+	height: 300px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.t-2{
+	width: 150px;
+	height: 250px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.t-3{
+	width: 50px;
+	height: 200px;
+}

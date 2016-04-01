@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>JavaScript和树（一）</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="btn-group">
+		<button onclick="init('pre')">前序遍历</button>
+		<button onclick="init('in')">中序遍历</button>
+		<button onclick="init('post')">后序遍历</button>
+		<input type="number" min="200" max="1000" step="100" value="200" >ms
+	</div>
+	<div class="t">
+		<div class="t-1">
+			<div class="t-2">
+				<div class="t-3"></div>
+				<div class="t-3"></div>
+			</div>
+			<div class="t-2">
+				<div class="t-3"></div>
+				<div class="t-3"></div>
+			</div>
+		</div>
+		<div class="t-1">
+			<div class="t-2">
+				<div class="t-3"></div>
+				<div class="t-3"></div>
+			</div>
+			<div class="t-2">
+				<div class="t-3"></div>
+				<div class="t-3"></div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
