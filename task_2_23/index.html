@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>JavaScript和树（二）</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="btn-group">
+		<button onclick="init('bf')">广度优先遍历</button>
+		<button onclick="init('df')">深度优先遍历</button>
+		<input type="number" min="200" max="1000" step="100" value="200" >ms
+		<input type="search" placeholder="搜索你想要的内容" id="s">
+		<button onclick="init('bf', true)">广度优先搜索</button>
+		<button onclick="init('df', true)">深度优先搜索</button>
+	</div>
+	<div class="t">
+	    黑崎一护
+		<div class="t-1">
+		    坂田银时
+		    <div class="t-2">
+		        朽木白哉
+		        <div class="t-3">
+		            朽木露琪亚
+		        </div>
+		    </div>
+		    <div class="t-2">
+		        蓝染
+		        <div class="t-3">
+		            路飞
+		        </div>
+		    </div>
+		    <div class="t-2">
+		        山治
+		        <div class="t-3">
+		            娜美
+		        </div>
+		    </div>
+		</div>
+		<div class="t-1">
+		    新八鸡
+		    <div class="t-2">
+		        神乐
+		        <div class="t-3">
+		            柯南
+		            <div class="t-4">
+		                小兰
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<div class="t-1">
+		    工藤新一
+		    <div class="t-2">
+		        毛利小五郎
+		        <div class="t-3">
+		            艾斯
+		        </div>
+		    </div>
+		    <div class="t-2">
+		        白胡子
+		        <div class="t-3">
+		            黑胡子
+		        </div>
+		    </div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
